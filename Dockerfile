@@ -27,8 +27,8 @@ COPY --from=bootstrap /rootfs /
 # Set up locale and timezone
 ENV LANG=en_US.UTF-8
 RUN locale-gen
-ENV TZ="Asia/Kolkata"
-RUN ln -sf /usr/share/zoneinfo/Asia/Kolkata /etc/localtime
+ENV TZ="Asia/Singapore"
+RUN ln -sf /usr/share/zoneinfo/Asia/Singapore /etc/localtime
 
 # Pacman
 RUN pacman-key --init && \
@@ -87,8 +87,8 @@ COPY --from=bootstrap /rootfs /
 # Set up locale and timezone
 ENV LANG=en_US.UTF-8
 RUN locale-gen
-ENV TZ="Asia/Kolkata"
-RUN ln -sf /usr/share/zoneinfo/Asia/Kolkata /etc/localtime
+ENV TZ="Asia/Singapore"
+RUN ln -sf /usr/share/zoneinfo/Asia/Singapore /etc/localtime
 
 # Pacman
 RUN pacman-key --init && \

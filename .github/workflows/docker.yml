@@ -3,7 +3,7 @@ name: Build Images
 on:
   push:
     branches:
-      - main
+      - arch-miyubi
   schedule:
       # Every Saturday at 1:30AM UTC
       - cron: "30 01 * * 6"
@@ -12,9 +12,9 @@ on:
 env:
   # Change these values if you have forked it for your own works
   # Use Lowercase vaue of your Username
-  GITHUB_USERNAME: Dakkshesh
-  GITHUB_EMAIL: dakkshesh5@gmail.com
-  GITHUB_ORG: neutron-projects
+  GITHUB_USERNAME: ekkusa
+  GITHUB_EMAIL: dayesofficial@gmail.com
+  GITHUB_ORG: miyoubi
 
   GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
@@ -99,7 +99,7 @@ jobs:
     runs-on: ubuntu-22.04
     needs: minimal
     env:
-      IMAGE_TAG: arch-neutron
+      IMAGE_TAG: arch-miyubi
 
     steps:
       - name: Checkout
